@@ -1,0 +1,111 @@
+\documentclass[11pt,aspectratio=169]{beamer}
+
+% ---------------------------------------------------------------------
+% Preamble
+% ---------------------------------------------------------------------
+
+\input{packages}
+\input{colors}
+\input{settings}
+\input{commands}
+\input{theme}
+
+% ---------------------------------------------------------------------
+% Title
+% ---------------------------------------------------------------------
+
+\title[Title at bottom]{Title}
+\subtitle{Subtitle}
+\author[Authors at bottom]{Authors}
+\institute[Bauhaus-Universität Weimar]{}
+\date[\today]{\today}
+
+\raggedright
+\AtBeginSection{\frame{\sectionpage}}
+
+% ---------------------------------------------------------------------
+
+\begin{document}
+
+% ---------------------------------------------------------------------
+% Content
+% ---------------------------------------------------------------------
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+% \maketitle
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+% ---------------------------------------------------------------------
+\section{Section}
+% ---------------------------------------------------------------------
+
+
+\begin{frame}{Itemize and Enumerate}
+    \begin{itemize}
+      \item foo
+      \item bar
+        \begin{itemize}
+          \item baz
+        \end{itemize}
+    \end{itemize}
+    \begin{enumerate}
+      \item foo
+      \item bar
+        \begin{enumerate}
+          \item baz
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\subsection{Subsection}
+\begin{frame}[fragile]{Code Highlighting}
+  \begin{lstlisting}[language=Rust]
+/// Code copied from https://doc.rust-lang.org/book/patterns.html
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+let point = Point { x: 2, y: 3 };
+
+match point {
+    Point { x, .. } => println!("x is {}", x),
+}
+  \end{lstlisting}
+\end{frame}
+
+
+\begin{frame}{Boxes}
+This is \alert{highlighted}.
+\begin{block}{Block}
+Sample text in blue box
+\end{block}
+\begin{alertblock}{Alert Block}
+Sample text in red box
+\end{alertblock}
+\begin{examples}
+``Examples'' is fixed as block title.
+\end{examples}
+\end{frame}
+
+\part{} % no section title in footer for this slides
+\begin{frame}{End}
+  \begin{center}
+    \includegraphics[height=.7\textheight]{images/octavio-fossatti-37556.eps}
+    \footnote[frame]{source:
+    \href{https://unsplash.com/photos/B5tUnCpJw6s}
+    {https://unsplash.com/photos/B5tUnCpJw6s}}
+  \end{center}
+\end{frame}
+
+%-----------------------------------------------------------------------
+% Appendix
+% ---------------------------------------------------------------------
+
+\appendix
+\end{document}

@@ -1,0 +1,55 @@
+\usetheme{CambridgeUS}
+
+
+% redefine colors to work with CambridgeUS theme
+\definecolor{darkred}{HTML}{005FAF}
+
+\mode<presentation>
+{
+  \useinnertheme{rectangles}
+  \setbeamertemplate{navigation symbols}{}
+}
+
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true]
+
+\setbeamercolor{author in head/foot}{fg=luciusWhite, bg=luciusBlue}
+% \setbeamercolor{title in head/foot}{fg=luciusBlack, bg=luciusGray}
+% \setbeamercolor{date in head/foot}{fg=luciusBlack, bg=lightgray}
+% \setbeamercolor{page number in head/foot}{fg=luciusBlack, bg=lightgray}
+
+\setbeamercolor{section in head/foot}{fg=luciusWhite,bg=luciusBlue}
+
+% \setbeamercolor{section page}{fg=luciusBlue,bg=white}
+
+\setbeamercolor{block title}{bg=luciusBlue,fg=white}
+\setbeamercolor{block body}{bg=luciusGray, fg=black}
+\setbeamercolor{block title alerted}{bg=luciusRed,fg=white}
+\setbeamercolor{block body alerted}{bg=luciusGray, fg=black}
+\setbeamercolor{block title example}{bg=luciusGreen,fg=white}
+\setbeamercolor{block body example}{bg=luciusGray, fg=black}
+
+\setbeamertemplate{itemize item}{\color{luciusBlue}$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\color{luciusBlue}$\blacktriangleright$}
+\setbeamercolor{item projected}{bg=luciusBlue}
+\setbeamertemplate{enumerate items}[default]
+\setbeamercolor{enumerate item}{fg=luciusBlue}
+\setbeamercolor{enumerate subitem}{fg=luciusBlue}
+\setbeamercolor{enumerate subsubitem}{fg=luciusBlue}
+
+\setbeamertemplate{footline}{%
+\hbox{%
+\begin{beamercolorbox}[wd=.20\paperwidth,ht=4.25ex,left,leftskip=3ex]
+  {author in head/foot}\vbox to4.25ex{\vfil
+  \hbox{\usebeamerfont{author in head/foot}\insertshortauthor}\vfil}%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.60\paperwidth,ht=4.25ex,center]{title in head/foot}%
+    \vbox to4.25ex{\vfil\hbox{\usebeamerfont{title in
+    head/foot}\insertshorttitle{}}\vfil}%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.20\paperwidth,ht=4.25ex,right,rightskip=3ex]
+  {date in head/foot} \vbox to4.25ex{\vfil
+  \hbox{\usebeamerfont{date in head/foot}\insertshortdate{}\quad
+  \usebeamerfont{page number in head/foot}
+  \insertframenumber/\inserttotalframenumber}\vfil}%
+\end{beamercolorbox}%
+}}

@@ -1,0 +1,14 @@
+% Rust
+\lstdefinelanguage{Rust}
+{
+  alsoletter={=>,println!,vec!,&self,&},
+  morekeywords={
+    fn, extern, crate, let, match, =>, struct, pub, self, &self, as, &, enum,
+    if, else, return
+  },
+  sensitive=false, % keywords are not case-sensitive
+  morecomment=[l]{//}, % l is for line comment
+  morecomment=[l]{///}, % l is for line comment
+  morecomment=[l]{//!}, % l is for line comment
+  morestring=[b]" % defines that strings are enclosed in double quotes
+}
