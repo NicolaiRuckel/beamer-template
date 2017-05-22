@@ -39,6 +39,9 @@ Fonts, style of listings, paths...
 Here is the actual talk. There is an example talk to show how the template
 looks.
 
+### Title
+Informations for the title page.
+
 ### Theme
 Definition of the theme. You probably don't want to change anything here.
 
