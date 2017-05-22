@@ -1,12 +1,19 @@
 % Rust
 \lstdefinelanguage{Rust}
 {
-  alsoletter={=>,println!,vec!,&self,&},
+  alsoletter={=>,println!,vec!,&self,&,macro_rules!,assert_eq!},
   morekeywords={
-    fn, extern, crate, let, match, =>, struct, pub, self, &self, as, &, enum,
-    if, else, return
+          as, break, const, continue, crate, else, enum, extern, false, fn, for,
+          if, impl, in, let, loop, match, mod, move, mut, pub, ref, return,
+          Self, self, static, struct, super, trait, true, type, unsafe, use,
+          where, while,
+          abstract, alignof, become, box, do, final, macro, offsetof, override,
+          priv, proc, pure, sizeof, typeof, unsized, virtual, yield,
+          =>, &self, &, enum
   },
-  sensitive=false, % keywords are not case-sensitive
+  % macros
+  emph={println!,vec!,macro_rules!,assert_eq!},
+  sensitive=true, % keywords are not case-sensitive
   morecomment=[l]{//}, % l is for line comment
   morecomment=[l]{///}, % l is for line comment
   morecomment=[l]{//!}, % l is for line comment
