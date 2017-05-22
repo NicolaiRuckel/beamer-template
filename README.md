@@ -9,8 +9,7 @@ colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 ## Files
 
 ### Makefile
-This is the Makefile for the template (duh!). It builds the talk with `make` and
-then cleans up the mess (.log, toc, .aux, ...) that the LaTeX compiler left.
+This is the Makefile for the template (duh!).
 
 ### Colors
 The defined colors are the ones from the
