@@ -5,6 +5,9 @@ colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 ## Requirements
 - rubber
 - xelatex
+- [Source Code Pro Font](https://github.com/adobe-fonts/source-code-pro)
+- [Source Sans Pro Font](https://github.com/adobe-fonts/source-sans-pro)
+- [Source Serif Pro Font](https://github.com/adobe-fonts/source-serif-pro)
 
 ## Files
 
