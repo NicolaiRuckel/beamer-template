@@ -52,6 +52,7 @@ Definition of the theme. You probably don't want to change anything here.
 - overwrite all colors and remove redefinition of `darkred`.
 - define gray colors
 - move syntax highlighting for Rust in separate package
+- lstlisting language for console output
 
 ## Useful links
 - Beamer appearance cheat sheet:
