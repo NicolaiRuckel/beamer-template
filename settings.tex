@@ -19,7 +19,7 @@
 % Define Languages
 \input{listing-languages}
 
-% Listing Style
+% General Listing Style
 \lstset{
   basicstyle=\small\ttfamily, % Global Code Style
   captionpos=b, % Position of the Caption (t for top, b for bottom)
@@ -42,8 +42,13 @@
   emphstyle=\color{luciusRed},
 }
 
+\lstset{
+  language=Plaintext,
+  numbers=none,
+}
+
 % ---------------------------------------------------------------------
 % Paths
 % ---------------------------------------------------------------------
 
-\graphicspath{{./images/}}
+graphicspath{{./images/}}
