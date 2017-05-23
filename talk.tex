@@ -21,6 +21,9 @@
       \item bar
         \begin{itemize}
           \item baz
+            \begin{itemize}
+              \item baz
+            \end{itemize}
         \end{itemize}
     \end{itemize}
     \begin{enumerate}
@@ -28,6 +31,9 @@
       \item bar
         \begin{enumerate}
           \item baz
+            \begin{enumerate}
+              \item baz
+            \end{enumerate}
         \end{enumerate}
     \end{enumerate}
 \end{frame}
@@ -50,7 +56,7 @@ match point {
 \end{frame}
 
 
-\begin{frame}{Boxes}
+\begin{frame}{Boxes and highlights}
 This is \alert{highlighted}.
 \begin{block}{Block}
 Sample text in blue box
@@ -64,12 +70,13 @@ Sample text in red box
 \end{frame}
 
 \begin{frame}[fragile]{Verbatim}
-\begin{lstlisting}[language=Plaintext]
+\begin{lstlisting}[style=nonumbers]
 Use lstlisting instead of verbatim
 x
  x
   x
    x
+to remove line numbers use `nonumbers` style
 \end{lstlisting}
 \end{frame}
 
