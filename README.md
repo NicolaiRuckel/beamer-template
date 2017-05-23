@@ -3,8 +3,8 @@ A minimal beamer template that hopefully does not look like shit. It uses the
 colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 
 ## Requirements
-- rubber
-- xelatex
+- [rubber](https://github.com/petrhosek/rubber)
+- [xelatex](http://xetex.sourceforge.net/)
 - [Source Code Pro Font](https://github.com/adobe-fonts/source-code-pro)
 - [Source Sans Pro Font](https://github.com/adobe-fonts/source-sans-pro)
 - [Source Serif Pro Font](https://github.com/adobe-fonts/source-serif-pro)
