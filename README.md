@@ -21,7 +21,9 @@ The defined colors are the ones from the
 look nice.
 
 ### Commands
-This is the place for custom commands.
+`\code` is `\texttt` with a gray background to make your monospace stuff more
+visible.
+This is also the place for custom commands.
 
 ### Listing-Languages
 Here are additional languages for the listing environment defined. Currently
@@ -53,6 +55,7 @@ Definition of the theme. You probably don't want to change anything here.
 - overwrite all colors and remove redefinition of `darkred`.
 - define gray colors
 - move syntax highlighting for Rust in separate package
+- maybe separate files for commands/packages of template and custom ones.
 
 ## Useful links
 - Beamer appearance cheat sheet:
