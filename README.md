@@ -12,7 +12,8 @@ colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 ## Files
 
 ### Makefile
-This is the Makefile for the template (duh!).
+This is the Makefile for the template (duh!). This also cleans up the mess of
+the xelatex compiler (.log, .toc, etc.).
 
 ### Colors
 The defined colors are the ones from the
