@@ -40,21 +40,43 @@
 
 \subsection{Subsection}
 \begin{frame}[fragile]{Code Highlighting}
-  \begin{lstlisting}[language=Rust]
-/// Code copied from https://doc.rust-lang.org/book/patterns.html
-struct Point {
-    x: i32,
-    y: i32,
-}
+  \begin{lstlisting}[autogobble, language=Rust]
+  /// Code copied from https://doc.rust-lang.org/book/patterns.html
+  struct Point {
+      x: i32,
+      y: i32,
+  }
 
-let point = Point { x: 2, y: 3 };
+  let point = Point { x: 2, y: 3 };
 
-match point {
-    Point { x, .. } => println!("x is {}", x),
-}
+  match point {
+      Point { x, .. } => println!("x is {}", x),
+  }
   \end{lstlisting}
 \end{frame}
 
+\begin{frame}[fragile]{More Rust code}
+  \begin{lstlisting}[autogobble, basicstyle=\scriptsize, language=Rust]
+    pub fn hash(&self, pwd: &Vec<u8>, t: &Vec<u8>, s: &Vec<u8>, g_low: u8,
+                g_high: u8, m: u16, gamma: &Vec<u8>, n: u8, k: u8) -> Vec<u8> {
+        let mut x = self.components.h(
+            [&t[..], &pwd[..], &s[..]].concat());
+        x = self.flap((g_low + 1) / 2, x, &gamma, n, k);
+        for g in g_low..g_high {
+            // In the first round the length of x is k bit and won't be padded.
+            // At the beginnig of the other rounds x is of length m as has to
+            // be padded to length n.
+            if x.len() < n as usize {
+                x = self.flap(
+                    g, self.zero_padding(x, n/8 - m as u8), &gamma, n, k);
+            }
+            x = self.components.h([&[g as u8], &x[..]].concat());
+            x.truncate(m as usize);
+        }
+        x
+    }
+  \end{lstlisting}
+\end{frame}
 
 \begin{frame}{Boxes and highlights}
 This is \alert{highlighted}.
