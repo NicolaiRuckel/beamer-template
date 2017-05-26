@@ -2,8 +2,7 @@
 A minimal beamer template that hopefully does not look like shit. It uses the
 colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 
-[Link to
-PDF](https://github.com/ranaexmachina/beamer-template/raw/master/sample/talk.pdf)
+[![Sample Talk]](https://github.com/ranaexmachina/beamer-template/raw/master/sample/talk.pdf)
 
 ## Requirements
 - [rubber](https://github.com/petrhosek/rubber)
