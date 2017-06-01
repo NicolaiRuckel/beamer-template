@@ -2,6 +2,17 @@
 A minimal beamer template that hopefully does not look like shit. It uses the
 colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 
+![preview](https://cloud.githubusercontent.com/assets/831282/26671255/10d202cc-46b5-11e7-8ba6-d13d959f6eaf.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671256/10ee68c2-46b5-11e7-8bf8-a49c57678ca6.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671259/10f28506-46b5-11e7-9e5c-590fc7fdff0a.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671260/10f2df56-46b5-11e7-9d77-eaf5e1437868.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671258/10f18494-46b5-11e7-86fe-cf9d21297364.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671261/10f66626-46b5-11e7-9888-76030a66dfdf.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671257/10ef5552-46b5-11e7-9c18-fafe078e3283.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671262/1104b7bc-46b5-11e7-9588-0d5adfc863b2.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671263/1106183c-46b5-11e7-894b-9a620df3cb45.png)
+![preview](https://cloud.githubusercontent.com/assets/831282/26671264/110ea164-46b5-11e7-91d0-ed77b9a532a5.png)
+
 ## Requirements
 - [rubber](https://github.com/petrhosek/rubber)
 - [xelatex](http://xetex.sourceforge.net/)
