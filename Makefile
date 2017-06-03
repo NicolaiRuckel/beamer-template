@@ -1,6 +1,6 @@
 MAIN = pre
 
-all: build clean
+all: build
 
 build:
 	rubber --module xelatex --warn=all --jobname talk $(MAIN).tex
