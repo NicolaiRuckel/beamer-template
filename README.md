@@ -61,13 +61,7 @@ looks.
 Informations for the title page.
 
 ### Theme
-Definition of the theme. You probably don't want to change anything here.
-
-## Todo
-- overwrite all colors and remove redefinition of `darkred`.
-- define gray colors
-- move syntax highlighting for Rust in separate package
-- maybe separate files for commands/packages of template and custom ones.
+Definition of the theme. You probably don't want to change anything here
 
 ## Useful links
 - Beamer appearance cheat sheet:
