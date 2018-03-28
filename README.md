@@ -33,7 +33,7 @@ The `preview` target creates a png with a thumbnail for each slide of the talk.
 Here is the actual talk. There is an example talk to show how the template
 looks.
 
-#### Title
+### Title
 Informations for the title page.
 
 ### Template
