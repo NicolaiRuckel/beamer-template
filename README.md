@@ -26,42 +26,45 @@ colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 ### Makefile
 This is the Makefile for the template (duh!). This also cleans up the mess of
 the xelatex compiler (.log, .toc, etc.).
+
 The `preview` target creates a png with a thumbnail for each slide of the talk.
 
-### Colors
+### Main
+Here is the actual talk. There is an example talk to show how the template
+looks.
+
+#### Title
+Informations for the title page.
+
+### Template
+
+#### Colors
 The defined colors are the ones from the
 [LuciusWhite](https://github.com/jonathanfilip/lucius) color scheme because they
 look nice.
 
-### Commands
+#### Commands
 `\code` is `\texttt` with a gray background to make your monospace stuff more
 visible.
 This is also the place for custom commands.
 
-### Listing-Languages
+#### Listing-Languages
 Here are additional languages for the listing environment defined. Currently
 there is only a definition for Rust because that is the only non-supported
 language I used so far.
 
-### Packages
+#### Packages
 The package used for this template. These are as minimal as possible to prevent
 clashes with packages that are needed for the actual presentation. This is also
 the place for custom packages.
 
-### Pre
+#### Pre
 Preamble and inclusion of all files.
 
-### Settings
+#### Settings
 Fonts, style of listings, paths...
 
-### Talk
-Here is the actual talk. There is an example talk to show how the template
-looks.
-
-### Title
-Informations for the title page.
-
-### Theme
+#### Theme
 Definition of the theme. You probably don't want to change anything here
 
 ## Useful links
