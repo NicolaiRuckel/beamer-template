@@ -26,6 +26,7 @@ colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 ### Makefile
 This is the Makefile for the template (duh!). This also cleans up the mess of
 the xelatex compiler (.log, .toc, etc.).
+The `preview` target creates a png with a thumbnail for each slide of the talk.
 
 ### Colors
 The defined colors are the ones from the
