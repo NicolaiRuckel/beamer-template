@@ -1,4 +1,4 @@
-MAIN = pre
+MAIN = template/pre
 OUTNAME = talk
 
 all: build
