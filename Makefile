@@ -1,8 +1,8 @@
 MAIN = template/pre
-OUTNAME = "talk.pdf"
-OUTDIR = "latex.out"
+OUTNAME = talk.pdf
+OUTDIR = latex.out
 
-LATEXRUN = "latexrun/latexrun"
+LATEXRUN = latexrun/latexrun
 LATEXCMD = xelatex
 
 all: build
