@@ -2,6 +2,9 @@
 A minimal beamer template that hopefully does not look like shit. It uses the
 colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 
+It uses [latexrun](https://github.com/aclements/latexrun) for building which is
+included as a submodule.
+
 # Preview
 [![title][title-thumb]][title]
 [![outline][outline-thumb]][outline]
@@ -15,7 +18,7 @@ colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
 [![end][end-thumb]][end]
 
 ## Requirements
-- [rubber](https://github.com/petrhosek/rubber)
+- Python 3 (for `latexrun`)
 - [xelatex](http://xetex.sourceforge.net/)
 - [Source Code Pro Font](https://github.com/adobe-fonts/source-code-pro)
 - [Source Sans Pro Font](https://github.com/adobe-fonts/source-sans-pro)
@@ -37,6 +40,8 @@ looks.
 Informations for the title page.
 
 ### Template
+Template defines the default settings. Customization is done with the files in
+`custom`.
 
 #### Colors
 The defined colors are the ones from the
@@ -46,7 +51,6 @@ look nice.
 #### Commands
 `\code` is `\texttt` with a gray background to make your monospace stuff more
 visible.
-This is also the place for custom commands.
 
 #### Listing-Languages
 Here are additional languages for the listing environment defined. Currently
@@ -66,6 +70,20 @@ Fonts, style of listings, paths...
 
 #### Theme
 Definition of the theme. You probably don't want to change anything here
+
+## Include Order
+The root file is `template/pre.tex` which then includes all other files.
+At first it includes `custom/pre.tex` and the remaining files in `template/`:
+
+* `packages.tex`
+* `colors.tex`
+* `settings.tex`
+* `commands.tex`
+* `theme.tex`
+
+Each of those files includes their respective file in `custom/` at the end.
+
+Finally `main.tex` gets included which contains the actual document.
 
 ## Useful links
 - Beamer appearance cheat sheet:
