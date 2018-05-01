@@ -55,26 +55,6 @@
   \end{lstlisting}
 \end{frame}
 
-\begin{frame}[fragile]{More Rust code}
-  \begin{lstlisting}[autogobble, language=Rust]
-    fn hash(&self, pwd: &Vec<u8>, t: &Vec<u8>, s: &Vec<u8>, g_low: u8,
-            g_high: u8, m: u16, gamma: &Vec<u8>, n: u8, k: u8) -> Vec<u8> {
-        // This is a comment
-        let mut x = self.components.h([&t[..], &pwd[..], &s[..]].concat());
-        x = self.flap((g_low + 1) / 2, x, &gamma, n, k);
-        for g in g_low..g_high {
-            if x.len() < n as usize {
-                x = self.zero_padding(x, n/8 - m as u8);
-            }
-            x = self.flap(g, x, &gamma, n, k);
-            x = self.components.h([&[g as u8], &x[..]].concat());
-            x.truncate(m as usize);
-        }
-        x
-    }
-  \end{lstlisting}
-\end{frame}
-
 \begin{frame}{Boxes and highlights}
 This is \alert{highlighted}.
 \begin{block}{Block}
