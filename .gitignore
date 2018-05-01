@@ -7,3 +7,4 @@
 *.vrb
 talk.pdf
 latex.out/*
+talk-*.png
