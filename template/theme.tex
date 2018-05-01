@@ -10,17 +10,22 @@
   \setbeamertemplate{navigation symbols}{}
 }
 
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\makeatletter
+\pgfdeclareverticalshading[lower.bg,upper.bg]{bmb@transition}{200cm}{%
+  color(0pt)=(lower.bg); color(0pt)=(lower.bg); color(4pt)=(lower.bg)}
+\makeatother
+
 \setbeamertemplate{title page}[default][colsep=-4bp, rounded=true]
 \setbeamertemplate{section page}[default][colsep=-4bp, rounded=true, shadow=false]
-
 \setbeamercolor{title}{bg=backgroundColor}
 
+\setbeamercolor{headline}{fg=luciusWhite, bg=luciusBlue}
 \setbeamercolor{background canvas}{fg=backgroundColor, bg=backgroundColor}
-\setbeamercolor{author in head/foot}{fg=luciusWhite, bg=luciusBlue}
-\setbeamercolor{title in head/foot}{fg=black, bg=lightGray}
-\setbeamercolor{date in head/foot}{fg=black, bg=mediumGray}
-\setbeamercolor{page number in head/foot}{fg=black, bg=mediumGray}
-
+\setbeamercolor{author in head/foot}{fg=black, bg=luciusGray}
+\setbeamercolor{title in head/foot}{fg=luciusWhite, bg=luciusBlue}
+\setbeamercolor{date in head/foot}{fg=black, bg=luciusGray}
+\setbeamercolor{page number in head/foot}{fg=black, bg=luciusGray}
 \setbeamercolor{section in head/foot}{fg=luciusWhite,bg=luciusBlue}
 
 % \setbeamercolor{section page}{fg=luciusBlue,bg=white}
@@ -41,15 +46,28 @@
 \setbeamercolor{enumerate subitem}{fg=luciusBlue}
 \setbeamercolor{enumerate subsubitem}{fg=luciusBlue}
 
+\setbeamertemplate{headline}{%
+  \setlength{\fboxsep}{1pt}
+  \hbox{\hrulefill\colorbox{luciusBlue}{%
+\begin{beamercolorbox}[wd=.49\paperwidth,ht=4.25ex,left,leftskip=3ex]
+  {title in head/foot}\vbox to4.25ex{\vfil
+  \hbox{\usebeamerfont{author in head/foot}\insertshorttitle}\vfil}%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.49\paperwidth,ht=4.25ex,right,rightskip=3ex]
+  {section in head/foot} \vbox to4.25ex{\vfil
+  \hbox{\usebeamerfont{date in head/foot}\insertsection}\vfil}%
+\end{beamercolorbox}%
+}}}
+
 \setbeamertemplate{footline}{%
 \hbox{%
 \begin{beamercolorbox}[wd=.20\paperwidth,ht=4.25ex,left,leftskip=3ex]
-  {author in head/foot}\vbox to4.25ex{\vfil
-  \hbox{\usebeamerfont{author in head/foot}\insertshortauthor}\vfil}%
+  {date in head/foot}\vbox to4.25ex{\vfil
+  \hbox{\usebeamerfont{author in head/foot}\insertinstitute}\vfil}%
 \end{beamercolorbox}%
-\begin{beamercolorbox}[wd=.60\paperwidth,ht=4.25ex,center]{title in head/foot}%
+\begin{beamercolorbox}[wd=.60\paperwidth,ht=4.25ex,center]{author in head/foot}%
     \vbox to4.25ex{\vfil\hbox{\usebeamerfont{title in
-    head/foot}\insertshorttitle{}}\vfil}%
+    head/foot}\insertshortauthor{}}\vfil}%
 \end{beamercolorbox}%
 \begin{beamercolorbox}[wd=.20\paperwidth,ht=4.25ex,right,rightskip=3ex]
   {date in head/foot} \vbox to4.25ex{\vfil
@@ -58,5 +76,22 @@
   \insertframenumber/\inserttotalframenumber}\vfil}%
 \end{beamercolorbox}%
 }}
+
+\newfontfamily\headingfont[Ligatures=TeX]{Oswald}
+\newfontfamily\normalfont[Ligatures=TeX]{Open Sans}
+
+\setmonofont{Source Code Pro}
+
+\setbeamerfont{normal text}{size=\normalsize, family=\normalfont}
+\setbeamerfont{title}{size=\Huge, family=\headingfont}
+\setbeamerfont{subtitle}{size=\huge, family=\headingfont}
+\setbeamerfont{author}{size=\Large}
+\setbeamerfont{institute}{size=\normalsize}
+\setbeamerfont{date}{size=\Large}
+\setbeamerfont{frametitle}{size=\huge, family=\headingfont}
+\setbeamerfont{section title}{size=\Huge, family=\headingfont}
+\setbeamerfont{section page}{size=\large, family=\headingfont}
+
+\AtBeginDocument{\usebeamerfont{normal text}}
 
 \include{custom/theme}
