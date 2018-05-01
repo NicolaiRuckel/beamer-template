@@ -21,8 +21,8 @@ included as a submodule.
 - Python 3 (for `latexrun`)
 - [xelatex](http://xetex.sourceforge.net/)
 - [Source Code Pro Font](https://github.com/adobe-fonts/source-code-pro)
-- [Source Sans Pro Font](https://github.com/adobe-fonts/source-sans-pro)
-- [Source Serif Pro Font](https://github.com/adobe-fonts/source-serif-pro)
+- Oswald Font
+- Open Sans Font
 
 ## Files
 
@@ -89,24 +89,20 @@ Finally `main.tex` gets included which contains the actual document.
 - Beamer appearance cheat sheet:
   <http://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf>
 
-[title-thumb]: https://user-images.githubusercontent.com/831282/26878652-7ac9103e-4b8e-11e7-9ea2-e1009fc25d39.png
-[outline-thumb]: https://user-images.githubusercontent.com/831282/26878654-7acb01a0-4b8e-11e7-9996-2413284dc0b7.png
-[section-thumb]: https://user-images.githubusercontent.com/831282/26878657-7adba212-4b8e-11e7-8ee4-49190489de30.png
-[itemize-thumb]: https://user-images.githubusercontent.com/831282/26878656-7adb6522-4b8e-11e7-9cdb-2fb8dad7e53a.png
-[code1-thumb]: https://user-images.githubusercontent.com/831282/26878660-7ae536b0-4b8e-11e7-81ab-f64fb0c87def.png
-[code2-thumb]: https://user-images.githubusercontent.com/831282/26878659-7ae2473e-4b8e-11e7-977c-056fa8317958.png
-[boxes-thumb]: https://user-images.githubusercontent.com/831282/26878658-7ae1d196-4b8e-11e7-8744-8c2acb968a9f.png
-[verbatim-thumb]: https://user-images.githubusercontent.com/831282/26878661-7ae84058-4b8e-11e7-950d-0aee99971a8c.png
-[commands-thumb]: https://user-images.githubusercontent.com/831282/26878662-7af24ca6-4b8e-11e7-9cee-f198062185cb.png
-[end-thumb]: https://user-images.githubusercontent.com/831282/26878663-7af810d2-4b8e-11e7-9cea-695f8efc6262.png
+[title-thumb]: https://user-images.githubusercontent.com/831282/39482906-07945502-4d71-11e8-9f91-76c65b14238d.png
+[outline-thumb]: https://user-images.githubusercontent.com/831282/39482907-07b6b1e2-4d71-11e8-86c4-692f931e3535.png
+[section-thumb]: https://user-images.githubusercontent.com/831282/39482908-07d70de8-4d71-11e8-9ad3-312841128079.png
+[itemize-thumb]: https://user-images.githubusercontent.com/831282/39482909-08002b06-4d71-11e8-88f7-8f4bc1c838ef.png
+[code1-thumb]: https://user-images.githubusercontent.com/831282/831282/39482911-0827366a-4d71-11e8-99fb-99e4fd656ae5.png
+[boxes-thumb]: https://user-images.githubusercontent.com/831282/39482912-08482744-4d71-11e8-9e7e-e3ac5259c155.png
+[commands-thumb]: https://user-images.githubusercontent.com/831282/39482913-0868a096-4d71-11e8-84c3-f507c3524915.png
+[end-thumb]: https://user-images.githubusercontent.com/39482914-0886e34e-4d71-11e8-9c57-4039e363f527.png
 
-[title]: https://user-images.githubusercontent.com/831282/26878645-7aac26d6-4b8e-11e7-8991-0f020a0d746b.png
-[outline]: https://user-images.githubusercontent.com/831282/26878646-7aae1ee6-4b8e-11e7-809f-c6058fdf634d.png
-[section]: https://user-images.githubusercontent.com/831282/26878644-7aaab71a-4b8e-11e7-828a-9298e8f37f92.png
-[itemize]: https://user-images.githubusercontent.com/831282/26878648-7ab19346-4b8e-11e7-9eb6-6c7ab5fcbacd.png
-[code1]: https://user-images.githubusercontent.com/831282/26878647-7aaf755c-4b8e-11e7-9119-706e17b7e608.png
-[code2]: https://user-images.githubusercontent.com/831282/26878649-7ab3aa28-4b8e-11e7-92d0-ac4c55da3532.png
-[boxes]: https://user-images.githubusercontent.com/831282/26878651-7ac2684c-4b8e-11e7-8f7b-5a1bc7df874f.png
-[verbatim]: https://user-images.githubusercontent.com/831282/26878650-7ac25f00-4b8e-11e7-879e-81eb302e08f3.png
-[commands]: https://user-images.githubusercontent.com/831282/26878655-7acb2c7a-4b8e-11e7-8477-d8b9e905dc1e.png
-[end]: https://user-images.githubusercontent.com/831282/26878653-7aca3054-4b8e-11e7-9e84-7ad3285f9b4f.png
+[title]: https://user-images.githubusercontent.com/831282/831282/39482896-062519ae-4d71-11e8-96cf-1902a4ed8983.png
+[outline]: https://user-images.githubusercontent.com/831282/39482898-065b5276-4d71-11e8-8b78-79b13e97cef7.png
+[section]: https://user-images.githubusercontent.com/831282/39482899-0680db7c-4d71-11e8-9b91-d7fa6a02b46e.png
+[itemize]: https://user-images.githubusercontent.com/831282/39482900-06ae9bf2-4d71-11e8-89ac-921b3b4fe0f1.png
+[code1]: https://user-images.githubusercontent.com/831282/39482901-06dcd67a-4d71-11e8-861b-af657e9a07d3.png
+[boxes]: https://user-images.githubusercontent.com/831282/39482902-06ff4a7a-4d71-11e8-8036-1848c6f620b7.png
+[commands]: https://user-images.githubusercontent.com/831282/39482903-071f0572-4d71-11e8-8e44-11459632c8fd.png
+[end]: https://user-images.githubusercontent.com/831282/39482904-0743acc4-4d71-11e8-8501-7e98d44e3590.png
