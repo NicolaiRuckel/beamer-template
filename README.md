@@ -91,10 +91,10 @@ Finally `main.tex` gets included which contains the actual document.
 [outline-thumb]: https://user-images.githubusercontent.com/831282/39482907-07b6b1e2-4d71-11e8-86c4-692f931e3535.png
 [section-thumb]: https://user-images.githubusercontent.com/831282/39482908-07d70de8-4d71-11e8-9ad3-312841128079.png
 [itemize-thumb]: https://user-images.githubusercontent.com/831282/39482909-08002b06-4d71-11e8-88f7-8f4bc1c838ef.png
-[code1-thumb]: https://user-images.githubusercontent.com/831282/831282/39482911-0827366a-4d71-11e8-99fb-99e4fd656ae5.png
+[code1-thumb]: https://user-images.githubusercontent.com/831282/39482911-0827366a-4d71-11e8-99fb-99e4fd656ae5.png
 [boxes-thumb]: https://user-images.githubusercontent.com/831282/39482912-08482744-4d71-11e8-9e7e-e3ac5259c155.png
 [commands-thumb]: https://user-images.githubusercontent.com/831282/39482913-0868a096-4d71-11e8-84c3-f507c3524915.png
-[end-thumb]: https://user-images.githubusercontent.com/39482914-0886e34e-4d71-11e8-9c57-4039e363f527.png
+[end-thumb]: https://user-images.githubusercontent.com/831282/39482914-0886e34e-4d71-11e8-9c57-4039e363f527.png
 
 [title]: https://user-images.githubusercontent.com/831282/831282/39482896-062519ae-4d71-11e8-96cf-1902a4ed8983.png
 [outline]: https://user-images.githubusercontent.com/831282/39482898-065b5276-4d71-11e8-8b78-79b13e97cef7.png
