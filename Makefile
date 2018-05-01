@@ -1,5 +1,5 @@
 MAIN = template/pre
-OUTNAME = talk.pdf
+OUTNAME = talk
 OUTDIR = latex.out
 
 LATEXRUN = latexrun/latexrun
@@ -8,7 +8,7 @@ LATEXCMD = xelatex
 all: build
 
 build:
-	$(LATEXRUN) -o $(OUTNAME) -O $(OUTDIR) --latex-cmd $(LATEXCMD) $(MAIN).tex
+	$(LATEXRUN) -o $(OUTNAME).pdf -O $(OUTDIR) --latex-cmd $(LATEXCMD) $(MAIN).tex
 
 preview:
 	convert -density 80 $(OUTNAME).pdf $(OUTNAME)-thumb.png
