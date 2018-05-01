@@ -11,9 +11,7 @@ included as a submodule.
 [![section][section-thumb]][section]
 [![itemize][itemize-thumb]][itemize]
 [![code][code1-thumb]][code1]
-[![code][code2-thumb]][code2]
 [![boxes][boxes-thumb]][boxes]
-[![verbatim][verbatim-thumb]][verbatim]
 [![commands][commands-thumb]][commands]
 [![end][end-thumb]][end]
 
