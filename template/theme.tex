@@ -18,7 +18,13 @@
 
 \setbeamertemplate{title page}[default][colsep=-4bp, rounded=true]
 \setbeamertemplate{section page}[default][colsep=-4bp, rounded=true, shadow=false]
-\setbeamercolor{title}{bg=backgroundColor}
+\setbeamercolor{title}{fg=luciusBlue, bg=backgroundColor}
+\setbeamercolor{subtitle}{fg=black, bg=backgroundColor}
+\setbeamercolor{subtitle}{fg=luciusBlue, bg=backgroundColor}
+\setbeamercolor{author}{fg=black, bg=backgroundColor}
+\setbeamercolor{institute}{fg=black, bg=backgroundColor}
+\setbeamercolor{date}{fg=black, bg=backgroundColor}
+\setbeamercolor{homepage}{fg=black, bg=backgroundColor}
 
 \setbeamercolor{headline}{fg=luciusWhite, bg=luciusBlue}
 \setbeamercolor{background canvas}{fg=backgroundColor, bg=backgroundColor}
@@ -63,7 +69,7 @@
 \hbox{%
 \begin{beamercolorbox}[wd=.20\paperwidth,ht=4.25ex,left,leftskip=3ex]
   {date in head/foot}\vbox to4.25ex{\vfil
-  \hbox{\usebeamerfont{author in head/foot}\insertinstitute}\vfil}%
+  \hbox{\usebeamerfont{author in head/foot}\insertshortinstitute}\vfil}%
 \end{beamercolorbox}%
 \begin{beamercolorbox}[wd=.60\paperwidth,ht=4.25ex,center]{author in head/foot}%
     \vbox to4.25ex{\vfil\hbox{\usebeamerfont{title in
@@ -85,9 +91,9 @@
 \setbeamerfont{normal text}{size=\normalsize, family=\normalfont}
 \setbeamerfont{title}{size=\Huge, family=\headingfont}
 \setbeamerfont{subtitle}{size=\huge, family=\headingfont}
-\setbeamerfont{author}{size=\Large}
-\setbeamerfont{institute}{size=\normalsize}
-\setbeamerfont{date}{size=\Large}
+\setbeamerfont{author}{size=\Large, family=\normalfont}
+\setbeamerfont{institute}{size=\normalsize, family=\normalfont}
+\setbeamerfont{date}{size=\Large, family=\normalfont}
 \setbeamerfont{frametitle}{size=\huge, family=\headingfont}
 \setbeamerfont{section title}{size=\Huge, family=\headingfont}
 \setbeamerfont{section page}{size=\large, family=\headingfont}
