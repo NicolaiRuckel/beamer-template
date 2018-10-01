@@ -2,15 +2,13 @@
 % Packages
 % ---------------------------------------------------------------------
 
-% inputenc package ignored with utf8 based engines.
-% \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{color}
 \usepackage{listings}
-\RequirePackage[outputdir=latex.out]{minted}
+\usepackage{minted}
+\usepackage[minted, breakable, skins]{tcolorbox}
+\usepackage{mdframed}
 \usepackage{xspace}
 \usepackage{fontspec}
 \usepackage{soul}           % sethlcolor
 \usepackage{lstautogobble}  % automatically remove prepending whitespaces
-
-\include{custom/packages}

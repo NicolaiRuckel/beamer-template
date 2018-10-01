@@ -15,7 +15,7 @@
 % ---------------------------------------------------------------------
 
 % Define Languages
-\input{template/listing-languages}
+\input{../template/listing-languages}
 
 % General Listing Style
 \lstset{
@@ -45,6 +45,34 @@
   numbers=none,
 }
 
+\usemintedstyle{bw}
+
+\mdfdefinestyle{mdfcode}{%
+  topline=false,
+  bottomline=false,
+  leftline=false,
+  rightline=false,
+  backgroundcolor=codeBackground}
+\surroundwithmdframed[style=mdfcode]{rustcode}
+
+\setminted{%
+  autogobble,
+  % frame = lines,
+  % framerule = 1.0pt,
+  % framesep  = 0.5em,
+  rulecolor = black,
+}
+
+\tcbset{%
+  blanker,
+  enlargepage flexible = \baselineskip,
+  listing only,
+  breakable,
+}
+
+\newtcblisting{rustcode}{%
+  minted language = rust,
+}
 % hide subsections from table of contents
 \setcounter{tocdepth}{1}
 
@@ -52,6 +80,4 @@
 % Paths
 % ---------------------------------------------------------------------
 
-\graphicspath{{./images/}}
-
-\include{custom/settings}
+\graphicspath{{../images/}}

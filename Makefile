@@ -1,22 +1,29 @@
-MAIN = template/pre
+CC = xelatex
+OUT = out
 OUTNAME = talk
-OUTDIR = latex.out
+CCFLAGS = -output-directory $(OUT) -jobname=$(OUTNAME).pdf -shell-escape
+BIB = biber
+MAIN = template/pre
 
-LATEXRUN = latexrun/latexrun
-LATEXCMD = xelatex
-LATEXARGS = '-shell-escape'
+BIBINPUTS = ../
+export BIBINPUTS
 
-all: build
+main: rubber
 
-build:
-	$(LATEXRUN) -o $(OUTNAME).pdf -O $(OUTDIR) --latex-cmd $(LATEXCMD) --latex-args=$(LATEXARGS) $(MAIN).tex
+latex:
+	mkdir $(OUT) 2> /dev/null || true
+	$(CC) $(CCFLAGS) $(MAIN)
+	cd $(OUT) && $(BIB) $(MAIN)
+	$(CC) $(CCFLAGS) $(MAIN)
+	$(CC) $(CCFLAGS) $(MAIN)
+
+rubber:
+	mkdir $(OUT) 2> /dev/null || true
+	rubber --module $(CC) --into $(OUT) -W all --unsafe -c 'setlist arguments --shell-escape' --jobname=$(OUTNAME) $(MAIN)
 
 preview:
 	convert -density 80 $(OUTNAME).pdf $(OUTNAME)-thumb.png
 	convert -density 250 $(OUTNAME).pdf $(OUTNAME).png
 
 clean:
-	$(LATEXRUN) --clean-all
-	rm -rf $(OUTDIR)
-	rm -f $(OUTNAME)*.png
-	rm -rf _minted-pre
+	rm -rf $(OUT)

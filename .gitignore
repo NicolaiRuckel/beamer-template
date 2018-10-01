@@ -8,3 +8,5 @@
 talk.pdf
 latex.out/*
 talk-*.png
+cache/*
+out/*
