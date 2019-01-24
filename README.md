@@ -1,3 +1,5 @@
+**This project is unmaintained and therefore will not be updated in the future!**
+
 # Yet another beamer template
 A minimal beamer template that hopefully does not look like shit. It uses the
 colors of the [Lucius color scheme](https://github.com/jonathanfilip/lucius).
